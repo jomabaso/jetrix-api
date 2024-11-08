@@ -1,0 +1,1 @@
+web: gunicorn jetrix_api.wsgi
