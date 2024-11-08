@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8-ydbjl4+ig^%#a97cm$f&e_vn*9fbde@mg*actzw#2%_(eckk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','100.20.92.101','44.225.181.72','44.227.217.144']
+ALLOWED_HOSTS = ['jetrix-api-production.up.railway.app','localhost','100.20.92.101','44.225.181.72','44.227.217.144']
 
 
 # Application definition
