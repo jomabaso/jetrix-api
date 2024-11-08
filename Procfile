@@ -1,1 +1,1 @@
-web: python manage.py collectstatic && gunicorn jetrix_api.wsgi
+web: python jetrix_api/manage.py collectstatic && gunicorn jetrix_api.wsgi
