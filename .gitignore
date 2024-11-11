@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.sqlite
+*.dat
+*.bak
+*.cache
+
+# Django migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Environments
+.env
+*.env
+venv/
+ENV/
+env/
+.virtualenv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node modules (for projects with front-end using npm)
+node_modules/
+
+# Static and media files
+/staticfiles/
+/mediafiles/
+/static/
+/media/
+
+# Django stuff:
+*.mo
+*.pot
+
+# Secrets
+secrets.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pytest
+.pytest_cache/
+.tox/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
