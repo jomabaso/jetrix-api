@@ -8,3 +8,4 @@ class Tablero(models.Model):
 
     def __str__(self):
         return self.titulo_tablero
+
