@@ -13,13 +13,14 @@ class TableroSerializador(serializers.ModelSerializer):
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','username','password','email']
+        fields = ['id','first_name','username','password','email']
         extra_kwargs = {
             'password': {'write_only': True}
         }
         
     def create(self, validated_data):
         user = User.objects.create_user(
+            first_name = validated_data.get('first_name',''),
             username = validated_data['username'],
             email = validated_data['email'],
             password=validated_data['password']
