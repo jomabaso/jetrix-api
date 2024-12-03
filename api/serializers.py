@@ -2,13 +2,19 @@
 
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Tablero
+from .models import Tablero, Task
 
 
 class TableroSerializador(serializers.ModelSerializer):
     class Meta:
         model = Tablero
         fields = ['id','titulo_tablero','description','fecha_publicacion']
+        
+        
+class TaskSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Task
+        fields = ['id','task_name','task_description','task_status']
     
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
